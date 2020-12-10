@@ -1,0 +1,8 @@
+<p><br></p>
+<div class="card" style="height:13em;background-color:  rgb(248, 244, 244);border:0px;padding:1em;border-radius:25px;">
+    <h6 class="card-header" class="text-primary"><a (click)="openModal()">{{restaurant.name}}</a></h6>
+    <p class="card-text">{{restaurant.description}}</p>
+    <p>Rating:<app-rating [imageFull]="'star-full.png'" [imageEmpty]="'star-empty.png'" [countFull]="restaurant.rating"></app-rating></p>
+    <p>Price:<app-rating [imageFull]="'coin-full.png'" [imageEmpty]="'coin-empty.png'" [countFull]="restaurant.price"></app-rating></p>
+    <br>
+</div>

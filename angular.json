@@ -24,7 +24,11 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap-reboot.min.css",
+              "src/assets/css/bootstrap.css",
+              "node_modules/font-awesome/css/font-awesome.css"
             ],
             "scripts": []
           },
@@ -119,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "DiningRoom"
+    }
+  },
+  "defaultProject": "DiningRoom",
+  "cli": {
+    "analytics": "34fd5a9b-d9ab-414d-85d9-8f234bbdbfc8"
+  }
 }

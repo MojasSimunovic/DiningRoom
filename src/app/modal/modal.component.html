@@ -1,0 +1,37 @@
+<h4 class="text-center">{{restaurant.name}}</h4>
+<div class= "row">
+    <div class="col-6">
+        <h6 style="font-weight: bold;">Working hours:</h6>
+        <ul>
+            <li *ngIf="Monday">Monday   : {{Monday.opens}}-{{Monday.closes}}</li>
+            <li *ngIf="Tuesday">Tuesday  : {{Tuesday.opens}}-{{Tuesday.closes}}</li>
+            <li *ngIf="Wednesday">Wednesday: {{Wednesday.opens}}-{{Wednesday.closes}}</li>
+            <li *ngIf="Thursday">Thursday : {{Thursday.opens}}-{{Thursday.closes}}</li>
+            <li *ngIf="Friday">Friday   : {{Friday.opens}}-{{Friday.closes}}</li>
+            <li *ngIf="Saturday">Saturday : {{Saturday.opens}}-{{Saturday.closes}}</li>
+        </ul>
+    </div>
+    <div class="col-2">
+        
+    </div>
+    <div class="col-4">
+        <h6 style="font-weight: bold;" class="text-center">Address</h6>
+        <ul>
+            <li><p class="text-center">{{restaurant.location}}</p></li>
+        </ul>       
+    </div>
+</div>
+<h3 class="text-center">Menu</h3>
+<table  class="table table-striped">
+    <tr>
+        <th scope="col-2">Name</th>
+        <th scope="col-8"></th>
+        <th scope="col-2">Price</th>
+    </tr>
+    <tr *ngFor="let item of menuItems">
+        <td>{{item.name}}</td>
+        <th scope="col-8"></th>
+        <td>{{item.price}}</td>
+    </tr>
+</table>  
+
