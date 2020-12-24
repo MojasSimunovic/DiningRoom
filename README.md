@@ -2,6 +2,11 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
 
+An app used for listing restaurants with the following functionalities:
+
+List of restaurants, with each of them containing name, description text, rating and meal price. List is sorted by price in descending order. The restaurants can also be filtered 
+by cuisine type, and price range. Clicking on a specific restaurant opens up an NG Bootstrap modal which contains address, menu and working hours of a given restaurant.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
